@@ -1,0 +1,11 @@
+.navLink {
+  color: inherit;
+  text-decoration: none;
+  &.active li {
+    background: #a4e2fa;
+  }
+}
+.disabled-link {
+  pointer-events: none;
+}
+
