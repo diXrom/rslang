@@ -18,7 +18,12 @@ const PersonCard = (props: IPerson) => {
       rel="noopener noreferrer"
     >
       <CardActionArea sx={getCardStyle(index)}>
-        <CardMedia component="img" sx={{ width: 300, height: 360 }} image={src} alt={title} />
+        <CardMedia
+          component="img"
+          sx={{ maxWidth: 300, height: '100% ', borderRadius: '50%' }}
+          image={src}
+          alt={title}
+        />
         <CardContent>
           <Typography variant="h5">{title}</Typography>
           <Typography variant="body2" color="text.secondary" sx={{ mb: 1, ml: 0.3 }}>
@@ -26,7 +31,7 @@ const PersonCard = (props: IPerson) => {
           </Typography>
           <Typography variant="body2">{description}</Typography>
           <Divider sx={{ height: 2, mb: 1 }} />
-          <Typography variant="h6">Обязаности</Typography>
+          <Typography variant="h6">Обязанности</Typography>
           <Typography variant="body2">{duty}</Typography>
         </CardContent>
       </CardActionArea>
