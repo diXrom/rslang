@@ -29,10 +29,10 @@ const StatisticsItems = () => {
       animate="visible"
       exit="hidden"
     >
-      <Grid container spacing={2} sx={{ width: { md: '600px', lg: '800px' } }}>
-        <Grid xs={4}>
+      <Grid container spacing={2} sx={{ maxWidth: { xs: '400px', md: '600px', lg: '800px' } }}>
+        <Grid xs={12} md={4}>
           <Stack spacing={2}>
-            <Item elevation={2}>
+            <Item elevation={2} /*  sx={{ height: { xs: 140, md: 180 } }} */>
               <Typography variant="h2" sx={{ fontWeight: 'bold', lineHeight: 1 }}>
                 {newWords[currentDate] || 0}
               </Typography>
@@ -52,7 +52,7 @@ const StatisticsItems = () => {
             </Item>
           </Stack>
         </Grid>
-        <Grid xs={8}>
+        <Grid xs={12} md={8}>
           <Stack spacing={2} sx={{ height: '100%' }}>
             <Item elevation={2} sx={{ height: '50%', pl: 4, alignItems: 'flex-start' }}>
               <Box sx={layoutSprint}>
