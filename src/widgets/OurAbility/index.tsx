@@ -19,7 +19,7 @@ const OurAbility = () => {
       component={motion.section}
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.5, once: true }}
+      viewport={{ once: true }}
     >
       <Typography
         variant="h4"
@@ -29,7 +29,7 @@ const OurAbility = () => {
       >
         Наши возможности
       </Typography>
-      <Grid container spacing={3} sx={{ marginY: 4, width: { md: 650, xl: '100%' } }}>
+      <Grid container spacing={3} sx={{ marginY: 4, maxWidth: { md: 650, xl: '100%' } }}>
         {cardData.map((card, i) => (
           <Grid sm={12} md={6} xl={3} display="flex" justifyContent="center" key={card.title}>
             <Card
