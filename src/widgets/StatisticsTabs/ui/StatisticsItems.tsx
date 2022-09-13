@@ -32,7 +32,7 @@ const StatisticsItems = () => {
       <Grid container spacing={2} sx={{ maxWidth: { xs: '400px', md: '600px', lg: '800px' } }}>
         <Grid xs={12} md={4}>
           <Stack spacing={2}>
-            <Item elevation={2} /*  sx={{ height: { xs: 140, md: 180 } }} */>
+            <Item elevation={2}>
               <Typography variant="h2" sx={{ fontWeight: 'bold', lineHeight: 1 }}>
                 {newWords[currentDate] || 0}
               </Typography>
@@ -46,7 +46,7 @@ const StatisticsItems = () => {
             </Item>
             <Item elevation={2}>
               <Typography variant="h2" sx={{ fontWeight: 'bold', lineHeight: 1 }}>
-                {getTotalPercent(sprint.successCount, audiocall.successCount)}%
+                {getTotalPercent(sprint, audiocall, 'successCount')}%
               </Typography>
               <Typography variant="subtitle2">правильных ответов</Typography>
             </Item>

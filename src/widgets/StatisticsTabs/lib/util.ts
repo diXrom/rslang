@@ -1,18 +1,23 @@
 import { IGameStatistic, IUserWord } from 'shared/api/lib/types';
 import { getDate } from 'shared/lib/utils';
 
+const checkDate = (date: string) => date === getDate();
+
 const getFilteredWords = (item: IUserWord) => {
   const currentDate = getDate();
   return item.optional.isLearned && item.optional.createdAt === currentDate;
 };
 
-const getTotalPercent = (sprint: number, audiocall: number) => {
-  if (!sprint) return (audiocall * 10).toFixed(0);
-  if (!audiocall) return (sprint * 10).toFixed(0);
-  return (((sprint + audiocall) / 2) * 10).toFixed(0);
+const getTotalPercent = (
+  sprint: IGameStatistic,
+  audiocall: IGameStatistic,
+  key: keyof IGameStatistic
+) => {
+  if (!checkDate(sprint.currentDate) && !checkDate(audiocall.currentDate)) return 0;
+  if (!sprint[key]) return ((audiocall[key] as number) * 10).toFixed(0);
+  if (!audiocall[key]) return ((sprint[key] as number) * 10).toFixed(0);
+  return ((((sprint[key] as number) + (audiocall[key] as number)) / 2) * 10).toFixed(0);
 };
-
-const checkDate = (date: string) => date === getDate();
 
 const getAmountWords = (game: IGameStatistic, key: keyof IGameStatistic) => {
   return (checkDate(game.currentDate) && game[key]) || 0;
@@ -28,7 +33,10 @@ const wordsData = (words: { [key: string]: number }, isAsc: boolean) => ({
       fill: true,
       label: 'Кол-во слов',
       data: isAsc
-        ? Object.values(words).map((item, i, arr) => item + (i && arr[i - 1]))
+        ? Object.values(words).reduce<number[]>(
+            (acc, val, i) => (i ? acc.concat(val + acc[i - 1]) : acc.concat(val)),
+            []
+          )
         : Object.values(words),
       backgroundColor: '#0288d1',
       minBarLength: 7,
