@@ -39,10 +39,10 @@ const StatisticsTabs = () => {
             </TabList>
           </Box>
 
-          <TabPanel value="1">
+          <TabPanel value="1" sx={{ p: { xs: '15px 0', md: 3 } }}>
             <StatisticsItems />
           </TabPanel>
-          <TabPanel value="2">
+          <TabPanel value="2" sx={{ p: { xs: '15px 0', md: 3 } }}>
             <StatisticsCharts />
           </TabPanel>
         </TabContext>

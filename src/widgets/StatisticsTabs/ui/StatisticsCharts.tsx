@@ -57,7 +57,10 @@ const StatisticsCharts = () => {
   }, []);
 
   return (
-    <Stack spacing={2} sx={{ width: { xs: '500px', lg: '600px' }, m: 'auto' }}>
+    <Stack
+      spacing={2}
+      sx={{ maxWidth: { xs: '370px', md: '500px', lg: '550px' }, m: 'auto', pt: { xs: 6, md: 0 } }}
+    >
       <Bar data={barData} options={options('Новые слова по дням')} />
       <Line data={areaData} options={options('Изученые слова за все время')} />
     </Stack>

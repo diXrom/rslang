@@ -4,9 +4,9 @@ const StatisticsProgress = () => {
   return (
     <Stack
       sx={{
-        justifyContent: 'center',
+        pt: '250px',
         alignItems: 'center',
-        pt: '200px',
+        height: { xs: '90vh', md: 'auto' },
       }}
     >
       <CircularProgress color="info" size={60} />
