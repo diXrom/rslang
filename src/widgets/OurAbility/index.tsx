@@ -29,9 +29,9 @@ const OurAbility = () => {
       >
         Наши возможности
       </Typography>
-      <Grid container spacing={3} sx={{ marginY: 4, maxWidth: { md: 650, xl: '100%' } }}>
+      <Grid container spacing={2} sx={{ marginY: 4, maxWidth: { md: 650, xl: '100%' } }}>
         {cardData.map((card, i) => (
-          <Grid sm={12} md={6} xl={3} display="flex" justifyContent="center" key={card.title}>
+          <Grid xs={12} md={6} xl={3} display="flex" justifyContent="center" key={card.title}>
             <Card
               sx={{ maxWidth: 350 }}
               component={motion.div}
