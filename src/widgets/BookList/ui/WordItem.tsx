@@ -33,7 +33,7 @@ const WordItem = ({ item, index, userId, setUserId }: IWordItem) => {
         exit="hidden"
         custom={index * 0.7}
       >
-        <Image src={`${API_URL}${item.image}`} alt="img" duration={500} />
+        <Image src={`${API_URL}${item.image}`} alt="img" duration={300} />
         <CardContent sx={{ width: '100%' }}>
           <WordHeader item={item} userId={userId} setUserId={setUserId} />
           <WordContent item={item} />
