@@ -1,4 +1,4 @@
-const API_URL = 'https://learn-words-api.herokuapp.com/';
+const API_URL = 'https://learn-words-api.onrender.com/';
 
 const API_PATH = {
   USERS: 'users',
