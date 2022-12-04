@@ -1,11 +1,11 @@
 ## RS Lang
 
-Заключительный групповой проект в RSSchool (EPAM) для 3 человек, но участвовали в разработке лишь двое. Это приложение помогает людям в изучении английского языка. Идеи были взяты с [lingualeo.com](https://lingualeo.com/).
+Final group project at RSSchool (EPAM) for 3 people, but only 2 people participated in the development. This app helps people in learning English. Ideas were implemented with [lingualeo.com](https://lingualeo.com/).
 
-### Каковы преимущества нашего приложения?
-Вы можете начать изучение слов с помощью карточек. Или вы можете выучить новые слова, играя в одну из двух игр Спринт или Аудиовызов. Также доступна страница статистики для отслеживания ваших успехов. Просто проверьте это сами! [RSLang](https://dixrom.github.io/rslang/#/)
+### What are the benefits of our application?
+You can start learning words with flashcards. Or you can learn new words by playing one of the two Sprint or Audio Challenge games. A statistics page is also available to track your progress. Just check it out for yourself! [RSLang](https://dixrom.github.io/rslang/#/)
 
-### Используемые технологии
+### Used technologies
  - React 
  - React Router
  - TypeScript 
