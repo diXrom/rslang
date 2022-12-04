@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rslang/static/css/main.4a398c09.css",
-    "main.js": "/rslang/static/js/main.0464c27b.js",
+    "main.css": "/rslang/static/css/main.e89bb059.css",
+    "main.js": "/rslang/static/js/main.baf746c1.js",
     "static/media/games.jpg": "/rslang/static/media/games.698945d65fe0d2292408.jpg",
     "static/media/learn_english.png": "/rslang/static/media/learn_english.c018afb3db64b41867ab.png",
     "static/media/statistics.jpg": "/rslang/static/media/statistics.17de64ad39f11f8a5e31.jpg",
@@ -10,12 +10,10 @@
     "static/media/correct-answer.mp3": "/rslang/static/media/correct-answer.33039f0d456ce6b79a1a.mp3",
     "static/media/wrong-answer.mp3": "/rslang/static/media/wrong-answer.5b7bab24cf28e527bfb6.mp3",
     "static/media/logo_RSS.svg": "/rslang/static/media/logo_RSS.81a79ebc80757e0dffe23f7a2258e44e.svg",
-    "index.html": "/rslang/index.html",
-    "main.4a398c09.css.map": "/rslang/static/css/main.4a398c09.css.map",
-    "main.0464c27b.js.map": "/rslang/static/js/main.0464c27b.js.map"
+    "index.html": "/rslang/index.html"
   },
   "entrypoints": [
-    "static/css/main.4a398c09.css",
-    "static/js/main.0464c27b.js"
+    "static/css/main.e89bb059.css",
+    "static/js/main.baf746c1.js"
   ]
 }
