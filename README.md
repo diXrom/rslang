@@ -14,4 +14,6 @@ You can start learning words with flashcards. Or you can learn new words by play
  - MUI 
  - Framer Motion
 
+### Sceenshot
 ![image](https://cdn.discordapp.com/attachments/574907131363590174/1016438697786363924/unknown.png)
+![image](https://cdn.discordapp.com/attachments/574907131363590174/1049076802380898304/image.png)
